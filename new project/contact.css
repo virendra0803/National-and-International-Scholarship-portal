@@ -1,0 +1,144 @@
+/* General styles */
+
+
+.navbar{
+    
+    display:flex;
+    background-size: auto;
+    width: 100%;
+    height: 50px;
+  
+    
+  }
+  
+  .nav-list{
+    animation: cubic-bezier(0.215, 0.610, 0.355, 1);
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background:rgba(89, 118, 182, 0.7) url("");
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .nav-list li{
+    list-style: none;
+    padding: 25px 30px;
+    color: orange;
+  }
+  
+  .nav-list li a{
+     text-decoration: none;
+     color: pink;
+  }
+  .nav-list li a:hover{
+      text-decoration: none;
+      color:orange;
+   }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Contact form */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Team contact info */
+.team-info {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.team-member:last-child {
+    border-bottom: none;
+}
+
+.team-member img {
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.team-member p {
+    margin: 0;
+}
+
+/* Map section */
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .contact-form, .team-info {
+        width: 100%;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}

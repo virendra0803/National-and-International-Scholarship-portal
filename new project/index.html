@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Portal</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="hed">
+            <img src="dgind.png" alt="DG Image">
+            <div class="logohed">
+                <img src="slogo.png" alt="Scholarship Logo">
+            </div>
+            <h1 class="text-center">National And International Scholarship Portal</h1>
+            <h3 class="text-center">Ministry of Electronics &amp; Information Technology, Government of India</h3>
+            <h6 class="text-center">(For Academic Year 2022-23)</h6>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="#service">Services</a>
+                <ul class="sub-services">
+                    <li><a href="https://www.wemakescholars.com/">International Scholarships</a></li>
+                    <li><a href="https://www.buddy4study.com/scholarships">National Scholarships</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <!-- Search bar -->
+        <div class="searchcl">
+            <input type="text" name="search" id="search" placeholder="Search">
+        </div>
+
+        <!-- Login Button -->
+        <div class="loginbtn12">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="slogo.png" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="unameid" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" id="pswid" placeholder="Enter Password" name="psw" required>
+
+                        <div class="loginbtnform">
+                            <button type="submit">Login</button>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="india.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="as.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="ao.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="at.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
